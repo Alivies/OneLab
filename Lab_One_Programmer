@@ -1,0 +1,46 @@
+ /***************************************************************************
+ *      Задание: Задание 1 - Базовые понятия языка С#                       *
+ *      Дата: 20.02.2022                                                    *
+ *      Выполнил: Поздняков Даниил Андреевич                                *
+ ***************************************************************************/
+
+using System;
+class HelloWorld 
+{
+  static void Main()
+  { 
+    // Задание 1
+    // Простое
+    // int age = 2;
+    // int Aage = age * age;
+    // int Aaage = Aage * age;
+    // int Aaaage = Aaage * age;
+    // Console.WriteLine($"A^2: {Aage} | A^3: {Aaage} | A^4: {Aaaage} |");
+    
+    // Сложное
+    // int num = 2;
+    // Console.Write(" Введите степень: ");
+    // int step = Convert.ToInt32(Console.ReadLine());
+    // for (int i = 1; i < step; i++)
+    // {
+    //   for(int a0 = 2; i < step; i++ ){
+    //     num = num * a0;
+    //     Console.WriteLine($"A^{i+1} : {num} ");
+    //   }
+    // }
+    // Задание 2
+    
+    Console.WriteLine("Введите трёхзначное число: ");
+    int n = int.Parse(Console.ReadLine());
+    if (n > 1000 || n < 100 ){
+      Console.WriteLine("Ошибка, введено неверное значение");
+    } else {
+      int a = n / 100;
+      int c = (n / 10) % 10;
+      int b = n % 10;
+      int x = 100 * a + 10 * b + c;
+      Console.WriteLine(x);
+    }
+  }
+}
+

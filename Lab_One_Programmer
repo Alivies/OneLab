@@ -5,41 +5,41 @@
  ***************************************************************************/
 
 using System;
-class HelloWorld 
+class HD 
 {
   static void Main()
   { 
     // Задание 1
     // Простое
     // int age = 2;
-    // int Aage = age * age;
-    // int Aaage = Aage * age;
-    // int Aaaage = Aaage * age;
-    // Console.WriteLine($"A^2: {Aage} | A^3: {Aaage} | A^4: {Aaaage} |");
+    // int aage = age * age;
+    // int aaage = aage * age;
+    // int aaaage = aaage * age;
+    // console.WriteLine($"A^2: {aage} | A^3: {aaage} | A^4: {aaaage} |");
     
     // Сложное
     // int num = 2;
-    // Console.Write(" Введите степень: ");
-    // int step = Convert.ToInt32(Console.ReadLine());
+    // console.Write(" Введите степень: ");
+    // int step = convert.ToInt32(console.ReadLine());
     // for (int i = 1; i < step; i++)
     // {
     //   for(int a0 = 2; i < step; i++ ){
     //     num = num * a0;
-    //     Console.WriteLine($"A^{i+1} : {num} ");
+    //     console.WriteLine($"A^{i+1} : {num} ");
     //   }
     // }
     // Задание 2
     
-    Console.WriteLine("Введите трёхзначное число: ");
-    int n = int.Parse(Console.ReadLine());
+    console.WriteLine("Введите трёхзначное число: ");
+    int n = int.Parse(console.ReadLine());
     if (n > 1000 || n < 100 ){
-      Console.WriteLine("Ошибка, введено неверное значение");
+      console.WriteLine("Ошибка, введено неверное значение");
     } else {
       int a = n / 100;
       int c = (n / 10) % 10;
       int b = n % 10;
       int x = 100 * a + 10 * b + c;
-      Console.WriteLine(x);
+      console.WriteLine(x);
     }
   }
 }
